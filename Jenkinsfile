@@ -2,7 +2,7 @@ env.mvnHome = '/usr/share/maven3'
 node('mavenlabel') {
    
    
-   stage('Preparation') { // for display purposes
+   stage('Preparation') { // for display purpos
       
       git 'https://github.com/jglick/simple-maven-project-with-tests.git'
         
