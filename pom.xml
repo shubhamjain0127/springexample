@@ -23,6 +23,37 @@
 		<version>2.5.6</version>
 	</dependency> 
   </dependencies>
+	<build>
+    ...
+    <plugins>
+        ...    
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>cobertura-maven-plugin</artifactId>
+            <version>2.5.2</version>
+        </plugin>
+        ...
+    </plugins>
+    ...
+</build>
+	<reporting>
+    ...
+    <plugins>
+        ... 
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>cobertura-maven-plugin</artifactId>
+            <version>2.5.2</version>
+            <configuration>
+                <check></check>
+                <formats>
+                    <format>html</format>
+                    <format>xml</format>
+                </formats>
+            </configuration>
+        </plugin>
+        ...
+    </plugins>
 <profiles>
 	<profile>
      <id>xyz-deploy</id>
